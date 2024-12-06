@@ -1,0 +1,16 @@
+div {
+    border: dashed red 1px;
+}
+
+:root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.block {
+    
+    height: 300px;
+    width: 200px;
+}
