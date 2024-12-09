@@ -1,16 +1,177 @@
-div {
+/* div {
     border: dashed red 1px;
-}
+} */
 
 :root {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
-.block {
-    
-    height: 300px;
-    width: 200px;
+.menu {
+
+
+    display: flex;  
+    text-align: center;  
+
+    height: 75%;
+    width: 70%;
+
+    border-radius: 1.5%;
+
+    box-shadow: 0px 5px 3px 5px lightgrey;
 }
+
+.caja-plan {
+
+
+    display: flex;
+    flex-direction: column;
+
+    width: 33.3333%;
+
+    border-radius: 1.5%;
+}
+
+.caja-plan--estandar {
+
+    height: 99%;
+    background: linear-gradient(140deg,  rgb(0, 57, 179), rgb(70, 250, 226));
+
+    border-radius: 0%;
+    border-bottom-right-radius: 4%;
+    border-bottom-left-radius: 4%;
+
+    box-shadow: 0px 5px 3px 1px lightgrey;
+}
+
+.caja-plan__titulo {
+    
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-texto {
+    color: rgb(0, 66, 207);
+    text-wrap: wrap;
+    padding-left: 50%;
+    padding-right: 50%;
+    
+}
+
+.titulo-texto--estandar {
+    color: white;
+    
+}
+
+
+.caja-plan__duracion {
+    color: rgb(0, 66, 207);
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-plan__duracion--estandar {
+    color: white;
+}
+
+.caja-plan__precio {
+    
+    color: rgb(46, 196, 176);
+    font-weight: 700;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-plan__ventajas {
+    height: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-ventajas {
+    color: rgb(0, 66, 207);
+    font-weight: 600;
+    text-wrap: wrap;
+    line-height: 150%;
+    width: 70%;
+}
+
+.texto-ventajas--estandar {
+    color: white;
+}
+
+.caja-plan__botones {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+[class ^="caja-plan__boton--"] {
+
+    border-radius: 15px;
+    box-shadow: 0px 5px 3px 1px lightgrey;
+    margin: 2%;
+    width: 55%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.caja-plan__boton--estandar-detalles {
+    box-shadow: 0px 5px 3px 1px rgb(0, 0, 0, 0.377);
+}
+
+.caja-plan__boton--estandar-comprar {
+    box-shadow: 0px 5px 3px 1px rgb(0, 0, 0, 0.377);
+}
+
+.botones {
+    margin: 0;
+    font-size: 0.85rem;
+    
+}
+
+.caja-plan__boton--comprar {
+    background-color: rgb(46, 196, 176);
+    color: white;
+}
+
+.caja-plan__boton--detalles {
+    background-color: white;
+    border: solid 1px rgb(46, 196, 176);
+    color: rgb(46, 196, 176);
+}
+
